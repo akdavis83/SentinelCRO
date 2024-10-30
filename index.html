@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sentinel CRO</title>
+  <link rel="icon" href="https://fav.farm/💎" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Orbitron:wght@400..900&family=Prociono&family=Righteous&family=Unlock&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="unlock-regular">
+<!-- partial:index.partial.html -->
+<nav style="z-index: 1;">
+
+  <a href="#" title="Home">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
+    </svg>
+    Home
+  </a>
+
+  <a href="#Sentinel" title="Profile">
+    <svg width="100px" height="100px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M256.688 18.406c-29.86 0-54.44 21.716-58.875 50.282H315.53c-4.428-28.566-28.983-50.282-58.842-50.282zm-104.313 9.282L81.75 99.094c26.37 25.22 50.43 39.66 69.438 45.53 20.595 6.364 34.156 3.076 41.53-4.468 2.482-2.538 4.475-5.84 5.813-9.875-12.5-13.88-20.124-32.236-20.124-52.31 0-5.28.527-10.45 1.53-15.44-7.117-10.973-16.213-22.668-27.56-34.843zm208.594 0c-11.35 12.174-20.452 23.87-27.564 34.843 1.004 4.99 1.53 10.16 1.53 15.44.002 20.074-7.63 38.43-20.123 52.31 1.334 4.036 3.33 7.338 5.812 9.876 7.374 7.544 20.935 10.832 41.53 4.47 19.01-5.873 43.068-20.313 69.44-45.532l-70.626-71.406zM197.843 87.374c4.008 25.464 24.02 45.487 49.5 49.47v-49.47h-49.5zm68.187 0v49.47c25.476-3.983 45.466-24.006 49.47-49.47h-49.47zm-52.655 55.72c-1.93 3.73-4.352 7.127-7.28 10.124-7.01 7.17-16.34 11.444-27.157 12.843 17.245 30.84 47.478 45.278 77.718 45.187 30.135-.09 60.314-14.62 77.594-45.188-10.75-1.42-20.024-5.706-27-12.843-2.926-2.994-5.323-6.4-7.25-10.126-12.413 8.293-27.313 13.156-43.313 13.156-16 0-30.893-4.863-43.312-13.156zm-105.72.905c-11.884 8.09-22.142 17.595-30.03 28.47 5.18 1.992 10.066 5.204 14.47 9.374.287.273.557.562.843.844 7.992-10.844 19.192-20.188 33-28.188-5.933-2.94-12.04-6.43-18.282-10.5zm297.814.156c-6.274 4.077-12.418 7.563-18.376 10.5 13.946 8.04 25.26 17.42 33.312 28.28.26-.258.518-.527.78-.78 4.39-4.208 9.27-7.476 14.44-9.53-7.928-10.863-18.222-20.373-30.157-28.47zM65.405 188.844c-4.14.03-8.71 1.797-13.937 6.812-5.23 5.016-10.76 13.247-15.595 24.78-9.03 21.54-15.567 54.52-16.406 98.19h91.75c-.836-44.038-7.38-77.138-16.407-98.626-4.833-11.502-10.363-19.67-15.563-24.594-5.2-4.924-9.704-6.592-13.844-6.562zm382.656 0c-4.14.03-8.71 1.797-13.937 6.812-5.228 5.016-10.758 13.247-15.594 24.78-9.03 21.54-15.566 54.52-16.405 98.19h91.75c-.835-44.038-7.38-77.138-16.406-98.626-4.833-11.502-10.364-19.67-15.564-24.594-5.2-4.924-9.703-6.592-13.844-6.562zm-164.5 37.53c-8.798 2.334-17.828 3.536-26.875 3.564-9.09.027-18.16-1.13-27-3.438-5.288 5.608-8.437 12.862-8.437 20.656 0 17.25 15.35 31.844 35.438 31.844 20.087 0 35.437-14.593 35.437-31.844 0-7.854-3.2-15.155-8.563-20.78zm-76 41.94c-20.808 10.54-39.378 28.066-52.937 52.248 5.276 2.285 10.287 5.71 15 10.188 12.49-23.23 29.974-38.884 49.25-47.5-4.683-4.264-8.518-9.31-11.313-14.938zm98.157.248c-2.83 5.618-6.727 10.63-11.44 14.875 19.213 8.67 36.67 24.287 49.19 47.282.062-.06.123-.13.186-.19 4.588-4.308 9.586-7.692 14.844-9.967-13.558-23.972-32.056-41.42-52.78-52zm-166.595 67.375c-5.454-.038-11.282 2.203-17.688 8.22-6.405 6.016-13.017 15.817-18.812 29.5-7.377 17.416-13.346 41.16-16.72 70.937 8.495-4.2 17.876-6.245 27.19-6.22 14.79.043 29.66 5.315 40.968 16.032 9.487 8.993 16.182 21.848 18.093 37.563h23.25c-.856-52.36-8.71-91.89-19.656-117.783-11.6-27.438-25.718-38.173-36.625-38.25zm234.97 0c-5.455-.038-11.252 2.203-17.658 8.22-6.405 6.016-13.048 15.817-18.843 29.5-10.943 25.835-18.774 65.513-19.625 118.312h23.217c1.898-15.826 8.58-28.72 18.094-37.72 11.325-10.712 26.243-15.917 41.033-15.875 9.298.026 18.658 2.098 27.125 6.313-3.368-29.494-9.328-53.09-16.688-70.5-11.6-27.44-25.75-38.174-36.656-38.25zm-336.126 1.375c-1.03 3.895-1.02 8.08.186 12.22 3.82 13.102 19.167 21.597 34.532 17.812 15.24-3.754 23.346-17.03 19.75-30.03l-54.47-.002zm382.655 0c-1.028 3.895-1.02 8.08.188 12.22 3.818 13.102 19.166 21.597 34.53 17.812 15.24-3.754 23.347-17.03 19.75-30.03l-54.468-.002zM113.03 457.063c-10.365-.03-20.612 3.615-28.155 10.75-5.935 5.615-10.374 13.43-12.03 24.157h80.436c-1.664-10.603-6.128-18.377-12.06-24-7.56-7.167-17.823-10.878-28.19-10.908zm287.22 0c-10.366-.03-20.582 3.615-28.125 10.75-5.935 5.615-10.405 13.43-12.063 24.157H440.5c-1.665-10.603-6.13-18.377-12.063-24-7.56-7.167-17.82-10.878-28.187-10.908z"/></svg>
+    Sentinel CRO
+  </a>
+
+  <a href="#" title="Settings">
+    <svg width="100px" height="100px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M301.4 51.96c-46.6.1-85.3 18.16-105.2 50.84-13.2 21.8-16.8 49.4-9.2 78 2 7.6 4.8 15.3 8.4 23.1 1.1-1.3 2.3-2.6 3.6-3.9 7.8-7.8 16.8-13.6 26.4-17.5-1.5-3.8-2.7-7.4-3.6-10.9-5.5-20.7-2.7-37 5.2-50.1 15.9-26.16 57.6-42.41 114.7-28.49l8.6-34.98c-16.9-4.11-33.3-6.09-48.9-6.07zM454 161.7l-35 8.6c13.9 57.1-2.3 98.8-28.5 114.7-13.1 7.9-29.4 10.7-50.1 5.2-3.5-.9-7.1-2.1-10.7-3.5-3.9 9.6-9.8 18.6-17.6 26.4-1.3 1.3-2.5 2.5-3.9 3.6 7.8 3.5 15.4 6.3 23 8.3 28.6 7.6 56.2 4 78-9.2 43.6-26.5 61.3-86.6 44.8-154.1zm-198.4 32.8c-15.9 0-31.8 6-43.9 18.2-24.3 24.3-24.2 63.4 0 87.7 24.3 24.2 63.4 24.2 87.7 0 24.3-24.3 24.2-63.4 0-87.7-12.1-12.2-28-18.2-43.8-18.2zm0 21.1c10.5 0 21 4 28.9 11.9 16 15.9 16 42.1.1 58-16 16-42.1 15.9-58 0-15.9-15.9-16-42 0-58 7.9-8 18.5-11.9 29-11.9zm0 17.9c-5.9 0-11.7 2.3-16.3 6.8-9.1 9-9.1 23.4 0 32.5 9 9 23.5 9 32.5 0 9.1-9.1 9.1-23.5 0-32.5-4.5-4.5-10.3-6.8-16.2-6.8zm-80 25.1l-54.5 54.5 43.7 43.7 34.2 34.1 54.4-54.5c-19.8-.5-39.4-8.3-54.4-23.3-15.1-15.1-22.9-34.7-23.4-54.5zM63.41 313.2l8.11 40.6 86.68 86.7 40.6 8.1-8.1-40.6-86.7-86.6zM18.1 358.5l8.13 40.7 86.57 86.6 40.7 8.1-8.1-40.6-86.59-86.7zm-.1 57.9v64.8l32.45-32.4zm45.2 45.2L30.8 494h64.78z"/></svg>
+    Map
+  </a>
+
+  <a href="#" title="Messages">
+    <svg width="100px" height="100px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M256 19c-13.8 0-27.9 3.02-41.5 8.48L256 79.44l41.5-51.96C283.9 22.02 269.8 19 256 19zm-59.4 16.96c-18.5 10.27-35.9 24.69-50.9 41.74-10.8 12.21-20.2 25.7-24.8 32.4l-64.8 87.1 59.1 83L95.9 348l71.6 64.2-6.9-27.3 36.1-108.2-40.7 27.1-75.98-106.3 42.28-56.3 97.4 48.7h72.7l97.4-48.7 42.3 56.3-76 106.3-40.8-27.2 1 3.2 35.2 105.1-6.9 27.3 71.5-64.2-19.4-67.8 59.2-83-64.8-87.1c-4.6-6.7-14-20.19-24.8-32.4-15-17.05-32.4-31.47-50.9-41.74L256 110.2zm15.1 256.44l-5 15h98.6l-5-15zm-11.5 34.2l-16.3 49.1h144.2l-16.4-49.1zm-17.3 68.3l12.3 49.2h121.6l12.2-49.2zm33.6 68.4L256 493l39.5-29.7z"/></svg>
+    About
+  </a>
+
+  
+  <a href="#" title="Social">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M8.7 10.7l6.6 -3.4" />
+      <path d="M8.7 13.3l6.6 3.4" />
+    </svg>
+    Social
+  </a>
+  <a href="#" title="Social">
+    <svg width="100px" height="100px" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+      <style type="text/css">
+        .st0{display:none;}
+        .st1{display:inline;}
+        .st2{fill:none;stroke:#B3B3B3;stroke-miterlimit:10;}
+        .st3{fill:none;stroke:#ED1C24;stroke-miterlimit:10;}
+        .st4{fill:#F9C04A;}
+        .st5{fill:#FFFFFF;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .st6{fill:#DEF6FC;}
+        .st7{fill:#FFDA9F;}
+        .st8{fill:#FFFFFF;}
+        .st9{fill:#FF5751;}
+        .st10{fill:#FF908A;}
+        .st11{fill:#133260;}
+        .st12{fill:#7782BB;}
+        .st13{fill:#96A5D6;}
+        .st14{fill:#FF5741;}
+        .st15{fill:#43527A;}
+        .st16{fill:#5E7296;}
+        .st17{fill:none;stroke:#133260;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .st18{fill:#83D689;}
+        .st19{fill:#B5F4B8;}
+        .st20{fill:#9BC5FF;}
+        .st21{fill:#B8D8FF;}
+        .st22{fill:#F24133;}
+        .st23{fill:#589FFF;}
+        .st24{fill:#7180BC;}
+        .st25{fill:#93A3D8;}
+        .st26{fill:#FF8103;}
+        .st27{fill:#FF9D4D;}
+        .st28{fill:#BC8D66;}
+        .st29{fill:#CEA282;}
+        .st30{fill:#FFDDA1;}
+        .st31{fill:#FFF1DC;}
+        .st32{fill:#7F6674;}
+        .st33{fill:#937A89;}
+        .st34{fill:#04398E;}
+        .st35{fill:#A6D1FF;}
+        .st36{fill:#EAA62D;}
+        .st37{fill:#C5DFFF;}
+        .st38{fill:#D6A47F;}
+        .st39{fill:#99A4D6;}
+      </style>
+      
+      <g class="st0" id="Layer_31">
+      
+      <g class="st1">
+      
+      <g>
+      
+      <g>
+      
+      <ellipse class="st2" cx="256" cy="256" rx="248.1" ry="248.3"/>
+      
+      <path class="st2" d="M398.8,504.5H113.2c-18.8,0-34.1-15.3-34.1-34.1V41.6c0-18.8,15.3-34.1,34.1-34.1h285.5      c18.8,0,34.1,15.3,34.1,34.1v428.9C432.9,489.3,417.6,504.5,398.8,504.5z"/>
+      
+      <path class="st2" d="M7.9,399.8V112.2c0-16.4,13.3-29.8,29.8-29.8h436.7c16.4,0,29.8,13.3,29.8,29.8v287.6      c0,16.4-13.3,29.8-29.8,29.8H37.6C21.2,429.6,7.9,416.2,7.9,399.8z"/>
+      
+      <path class="st2" d="M440.4,469.9H71.6c-16.4,0-29.8-13.3-29.8-29.8V71.9c0-16.4,13.3-29.8,29.8-29.8h368.8      c16.4,0,29.8,13.3,29.8,29.8v368.2C470.2,456.5,456.8,469.9,440.4,469.9z"/>
+      
+      </g>
+      
+      <rect class="st3" height="497" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 512 5.684342e-14)" width="497" x="7.5" y="7.5"/>
+      
+      </g>
+      
+      </g>
+      
+      </g>
+      
+      <g id="Layer_32">
+      
+      <g>
+      
+      <g>
+      
+      <g>
+      
+      <g>
+      
+      <g>
+      
+      <path class="st14" d="M467.4,387.7H44.6c-22.1,0-40-17.9-40-40V127.6c0-22.1,17.9-40,40-40h422.9c22.1,0,40,17.9,40,40v220.1        C507.4,369.8,489.5,387.7,467.4,387.7z"/>
+      
+      <path class="st10" d="M29.8,347.7V127.6c0-22.1,17.9-40,40-40H44.6c-22.1,0-40,17.9-40,40v220.1c0,22.1,17.9,40,40,40h25.3        C47.7,387.7,29.8,369.8,29.8,347.7z"/>
+      
+      <path class="st4" d="M45.1,329.7V145.6c0-9.7,7.8-17.5,17.5-17.5h386.9c9.7,0,17.5,7.8,17.5,17.5v184.1        c0,9.7-7.8,17.5-17.5,17.5H62.6C52.9,347.2,45.1,339.4,45.1,329.7z"/>
+      
+      <path class="st7" d="M70.3,329.7V145.6c0-9.7,7.8-17.5,17.5-17.5H62.6c-9.7,0-17.5,7.8-17.5,17.5v184.1        c0,9.7,7.8,17.5,17.5,17.5h25.3C78.2,347.2,70.3,339.4,70.3,329.7z"/>
+      
+      </g>
+      
+      </g>
+      
+      <g>
+      
+      <path class="st11" d="M138.3,186.8c0-2.7,2.4-4,4.8-4h26c17.8,0,32.4,4.6,32.4,27c0,13.3-5.4,22.7-13.5,26.2       c9.7,4,16.4,11.1,16.4,27.3v2.9c0,24.1-13.8,32.7-31.4,32.7h-29.8c-3,0-4.8-1.9-4.8-4V186.8z M148.6,231.4h20.8       c14.6,0,21.6-5.4,21.6-20.5c0-14.6-9.2-18.4-22.2-18.4h-20.2V231.4z M171.6,289.2c13.8,0,22.2-7.1,22.2-23.5V263       c0-16.5-8.4-22.5-22.2-22.5h-23v48.7H171.6z"/>
+      
+      <path class="st11" d="M279.4,186.7c0-2.7,2.5-3.8,5.2-3.8c2.5,0,5.2,1.1,5.2,3.8v79.2c0,24.8-14.8,34-33.3,34       c-18.7,0-33.3-9.2-33.3-34v-79.2c0-2.7,2.7-3.8,5.2-3.8c2.7,0,5.2,1.1,5.2,3.8v79.2c0,16.5,8.6,24.3,22.9,24.3       c14.3,0,22.9-7.8,22.9-24.3V186.7z"/>
+      
+      <path class="st11" d="M338.3,254.5c0-0.5,0-0.8-0.2-1.3l-32.9-63c-0.6-1.1-0.8-2.2-0.8-2.9c0-2.7,3.2-4.4,5.7-4.4       c1.7,0,3,1,4.1,3.2l29.2,57.9l29.4-57.9c1.1-2.2,2.5-3.2,4.1-3.2c2.5,0,5.7,1.7,5.7,4.4c0,0.6-0.2,1.7-0.6,2.9l-33,63       c-0.2,0.5-0.3,0.8-0.3,1.3v40.3c0,2.7-2.5,4.1-5.2,4.1c-2.5,0-5.2-1.4-5.2-4.1V254.5z"/>
+      
+      </g>
+      
+      </g>
+      
+      <path class="st15" d="M501.5,301.8l-75.3-38.2c-5.8-3-12.9,0.1-14.8,6.4l-23.8,81c-2.5,8.5,6.1,16.1,14.2,12.6l28.1-12.1     l28.4,65.7c2.7,6.1,9.8,9,15.9,6.3l20.7-8.9c6.1-2.7,9-9.8,6.3-15.9l-28.4-65.7l28.1-12.1C509.1,317.2,509.4,305.8,501.5,301.8z"/>
+      
+      <g>
+      
+      <path class="st16" d="M439.3,270.2l-13.1-6.6c-5.8-3-12.9,0.1-14.8,6.4l-23.8,81c-2.5,8.5,6.1,16.1,14.2,12.6l11.5-5      L439.3,270.2z"/>
+      
+      <path class="st16" d="M437.4,348l-7.4,3.4l28.4,65.7c2.7,6.1,9.8,9,15.9,6.3l8.5-3.7l-30.9-66.5      C449.3,347.8,442.8,345.5,437.4,348z"/>
+      
+      </g>
+      
+      </g>
+      
+      <path class="st11" d="M512,347.7V127.6C512,103,492,83,467.4,83H44.6C20,83,0,103,0,127.6v220.1c0,24.6,20,44.6,44.6,44.6h398.1    l11.5,26.6c1.8,4.1,5,7.2,9.2,8.9c2,0.8,4.1,1.2,6.1,1.2c2.2,0,4.5-0.5,6.6-1.4l20.7-8.9c4.1-1.8,7.2-5,8.9-9.2    c1.6-4.1,1.6-8.7-0.2-12.8l-7.2-16.8C507,371.6,512,360,512,347.7z M44.6,383.2c-19.5,0-35.4-15.9-35.4-35.4V127.6    C9.1,108,25,92.1,44.6,92.1h422.9c19.5,0,35.4,15.9,35.4,35.4v169.8l-31.4-15.9V145.6c0-12.2-9.9-22.1-22.1-22.1H62.6    c-12.2,0-22.1,9.9-22.1,22.1v184.1c0,12.2,9.9,22.1,22.1,22.1h320.2c-0.7,5,1,10,4.9,13.4c4.4,3.9,10.5,4.9,15.9,2.5l23.9-10.3    l11.1,25.7H44.6z M462.4,145.6v131.2l-34.1-17.3c-4-2-8.7-2.2-12.8-0.4c-4.1,1.8-7.2,5.3-8.5,9.6l-21.7,74H62.6    c-7.1,0-13-5.8-13-13V145.6c0-7.1,5.8-13,13-13h386.9C456.6,132.6,462.4,138.5,462.4,145.6z M497.1,406.1c-0.7,1.9-2.2,3.4-4,4.2    l-20.7,8.9c-1.9,0.8-3.9,0.8-5.8,0.1c-1.9-0.7-3.4-2.2-4.2-4l-12.7-29.3c0,0,0,0,0,0l-15.7-36.3c-0.5-1.1-1.4-2-2.5-2.4    c-0.5-0.2-1.1-0.3-1.7-0.3c-0.6,0-1.2,0.1-1.8,0.4l-28.1,12.1c-2.2,0.9-4.5,0.6-6.3-1c-1.8-1.6-2.4-3.8-1.8-6.1l1.1-3.7    c0,0,0-0.1,0-0.1l22.6-77.2c0.5-1.7,1.7-3.1,3.3-3.8c1.6-0.7,3.5-0.6,5,0.2l40.7,20.6c0,0,0.1,0,0.1,0.1l34.5,17.5    c2.1,1.1,3.3,3.1,3.2,5.5c-0.1,2.4-1.4,4.3-3.6,5.3L471,328.7c-1.1,0.5-2,1.4-2.4,2.5c-0.4,1.1-0.4,2.4,0.1,3.5l19.8,45.8    c0,0,0,0.1,0,0.1l8.5,19.7C497.9,402.2,497.9,404.3,497.1,406.1z M494.3,370.9l-15.4-35.7l23.9-10.3c0.1,0,0.1,0,0.2-0.1v22.9    C502.9,356.3,499.8,364.5,494.3,370.9z"/>
+      
+      </g>
+      
+      </g>
+      
+      </svg>
+    BUY S-CRO
+  </a>
+</nav>
+<!-- partial:index.partial.html -->
+<lottie-player class="upgrade-animation" src="https://assets5.lottiefiles.com/packages/lf20_urctlwhk.json" background="transparent" speed="1" loop="" autoplay="" style="z-index: 1;">
+	</lottie-player>
+<!-- partial -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div style="text-align: center; z-index: 1;">
+<img src="Sentinel Cro.png" alt="S-CRO" style="width: 300px;" id="Sentinel">
+
+  <h1>
+    Sentinel CRO~A powerful weapon on the battlefield.
+  </h1>
+  <br>
+  <h1>
+    There are: 1 Billion Sentinel CRO in circulation(S-CRO).
+  </h1>
+  <br>
+  <h2>
+    In the heart of the MemeVerse, where memes took on lives of their own, there stood Sentinel CRO—an indomitable robot forged from layers of indestructible diamond hands and powered by the fire power of "HODL." Sentinel CRO was no ordinary defender; his core glowed with the power of the Sentinel CRO meme coin, a currency so potent it fueled entire galaxies of memes.
+
+Every day, the MemeVerse was under siege from *jeets*—those pesky, panic-selling intruders who couldn’t resist the urge to “paper-hand” their holdings. These jeets swooped in, sold low, bought high, and threatened to unravel the delicate fabric of the MemeVerse. It was up to Sentinel CRO to stop them from spreading their fear, uncertainty, and doubt, which threatened the sacred value of the Sentinel CRO meme coin.
+
+One fateful day, a horde of jeets descended upon Memeopolis, armed with a new weapon: the FUD Blaster 9000. Rumor had it that this weapon could erase any meme value with a single blast, leaving users with nothing but broken dreams and a steep drop in follower count. The jeets aimed their FUD Blasters at Sentinel CRO, chanting, “SELL, SELL, SELL!”
+
+But Sentinel CRO stood tall, his emerald eyes blazing with the fire of unshakable belief. “You think you can shake my conviction?” he bellowed, his voice echoing through Memeopolis. “I was programmed to HODL, and HODL I shall!”
+
+With a powerful swipe of his laser blade, he carved the words *“HODL or PERISH”* into the skies, sending a shockwave through the jeet ranks. The jeets hesitated, questioning their paper-handed ways, as Sentinel CRO unleashed his secret weapon: the *Diamond Hands Cannon*. This legendary weapon, once charged, could transform any jeet into a HODLer by injecting them with meme-strengthened resolve and an unbreakable desire to hold the line.
+
+One by one, the jeets dropped their FUD Blasters and clutched their newly minted Sentinel CRO meme coins. They looked at their hands, now diamond-tough, and let out cries of newfound loyalty to the MemeVerse.
+
+With peace restored, Sentinel CRO turned to the masses, raised his sword high, and declared, “The MemeVerse will never fall to weak hands! Now, go forth, and spread the word—*HODL or fade into the meme dust!*”
+
+And so, the jeets were converted, the MemeVerse was safe once more, and Sentinel CRO stood watch, ever vigilant, waiting for the next wave of weak hands to try their luck.
+  </h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<div style="position: absolute; bottom: 0px;">
+	<canvas></canvas>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lottie-player/2.0.4/lottie-player.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js'></script>
+<script src="./script.js"></script>
+<script>
+  const canvas = document.querySelector("canvas");
+const gl = canvas.getContext("webgl");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+gl.viewport(0, 0, canvas.width, canvas.height);
+
+// Configurable parameters
+const config = {
+	particleCount: 5000,
+	textArray: ["Sentinel", "CRO", "HODL"],
+	mouseRadius: 0.1,
+	particleSize: 2,
+	forceMultiplier: 0.001,
+	returnSpeed: 0.005,
+	velocityDamping: 0.95,
+	colorMultiplier: 40000,
+	saturationMultiplier: 1000,
+	textChangeInterval: 10000,
+	rotationForceMultiplier: 0.5
+};
+
+let currentTextIndex = 0;
+let nextTextTimeout;
+let textCoordinates = [];
+
+const mouse = {
+	x: -500,
+	y: -500,
+	radius: config.mouseRadius
+};
+
+const particles = [];
+for (let i = 0; i < config.particleCount; i++) {
+	particles.push({ x: 0, y: 0, baseX: 0, baseY: 0, vx: 0, vy: 0 });
+}
+
+const vertexShaderSource = `
+    attribute vec2 a_position;
+    attribute float a_hue;
+    attribute float a_saturation;
+    varying float v_hue;
+    varying float v_saturation;
+    void main() {
+        gl_PointSize = ${config.particleSize.toFixed(1)};
+        gl_Position = vec4(a_position, 0.0, 1.0);
+        v_hue = a_hue;
+        v_saturation = a_saturation;
+    }
+`;
+
+const fragmentShaderSource = `
+    precision mediump float;
+    varying float v_hue;
+    varying float v_saturation;
+    void main() {
+        float c = v_hue * 6.0;
+        float x = 1.0 - abs(mod(c, 2.0) - 1.0);
+        vec3 color;
+        if (c < 1.0) color = vec3(1.0, x, 0.0);
+        else if (c < 2.0) color = vec3(x, 1.0, 0.0);
+        else if (c < 3.0) color = vec3(0.0, 1.0, x);
+        else if (c < 4.0) color = vec3(0.0, x, 1.0);
+        else if (c < 5.0) color = vec3(x, 0.0, 1.0);
+        else color = vec3(1.0, 0.0, x);
+        vec3 finalColor = mix(vec3(1.0), color, v_saturation);
+        gl_FragColor = vec4(finalColor, 1.0);
+    }
+`;
+
+function createShader(gl, type, source) {
+	const shader = gl.createShader(type);
+	gl.shaderSource(shader, source);
+	gl.compileShader(shader);
+	if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+		console.error(gl.getShaderInfoLog(shader));
+		gl.deleteShader(shader);
+		return null;
+	}
+	return shader;
+}
+
+function createProgram(gl, vertexShader, fragmentShader) {
+	const program = gl.createProgram();
+	gl.attachShader(program, vertexShader);
+	gl.attachShader(program, fragmentShader);
+	gl.linkProgram(program);
+	if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+		console.error(gl.getProgramInfoLog(program));
+		gl.deleteProgram(program);
+		return null;
+	}
+	return program;
+}
+
+const vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
+const fragmentShader = createShader(
+	gl,
+	gl.FRAGMENT_SHADER,
+	fragmentShaderSource
+);
+const program = createProgram(gl, vertexShader, fragmentShader);
+
+const positionAttributeLocation = gl.getAttribLocation(program, "a_position");
+const hueAttributeLocation = gl.getAttribLocation(program, "a_hue");
+const saturationAttributeLocation = gl.getAttribLocation(
+	program,
+	"a_saturation"
+);
+
+const positionBuffer = gl.createBuffer();
+const hueBuffer = gl.createBuffer();
+const saturationBuffer = gl.createBuffer();
+
+const positions = new Float32Array(config.particleCount * 2);
+const hues = new Float32Array(config.particleCount);
+const saturations = new Float32Array(config.particleCount);
+
+function getTextCoordinates(text) {
+	const ctx = document.createElement("canvas").getContext("2d");
+	ctx.canvas.width = canvas.width;
+	ctx.canvas.height = canvas.height;
+	const fontSize = Math.min(canvas.width / 6, canvas.height / 6);
+	ctx.font = `900 ${fontSize}px Arial`;
+	ctx.fillStyle = "white";
+	ctx.textAlign = "center";
+	ctx.textBaseline = "middle";
+	ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+	const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+	const coordinates = [];
+	for (let y = 0; y < canvas.height; y += 4) {
+		for (let x = 0; x < canvas.width; x += 4) {
+			const index = (y * canvas.width + x) * 4;
+			if (imageData[index + 3] > 128) {
+				coordinates.push({
+					x: (x / canvas.width) * 2 - 1,
+					y: (y / canvas.height) * -2 + 1
+				});
+			}
+		}
+	}
+	return coordinates;
+}
+
+function createParticles() {
+	textCoordinates = getTextCoordinates(config.textArray[currentTextIndex]);
+	for (let i = 0; i < config.particleCount; i++) {
+		const randomIndex = Math.floor(Math.random() * textCoordinates.length);
+		const { x, y } = textCoordinates[randomIndex];
+		particles[i].x = particles[i].baseX = x;
+		particles[i].y = particles[i].baseY = y;
+	}
+}
+function updateParticles() {
+	for (let i = 0; i < config.particleCount; i++) {
+		const particle = particles[i];
+		const dx = mouse.x - particle.x;
+		const dy = mouse.y - particle.y;
+		const distance = Math.sqrt(dx * dx + dy * dy);
+		const forceDirectionX = dx / distance;
+		const forceDirectionY = dy / distance;
+		const maxDistance = mouse.radius;
+		const force = (maxDistance - distance) / maxDistance;
+		const directionX = forceDirectionX * force * config.forceMultiplier;
+		const directionY = forceDirectionY * force * config.forceMultiplier;
+
+		const angle = Math.atan2(dy, dx);
+
+		const rotationForceX = Math.sin(
+			-Math.cos(angle * -1) *
+				Math.sin(config.rotationForceMultiplier * Math.cos(force)) *
+				Math.sin(distance * distance) *
+				Math.sin(angle * distance)
+		);
+
+		const rotationForceY = Math.sin(
+			Math.cos(angle * 1) *
+				Math.sin(config.rotationForceMultiplier * Math.sin(force)) *
+				Math.sin(distance * distance) *
+				Math.cos(angle * distance)
+		);
+
+		if (distance < mouse.radius) {
+			particle.vx -= directionX + rotationForceX;
+			particle.vy -= directionY + rotationForceY;
+		} else {
+			particle.vx += (particle.baseX - particle.x) * config.returnSpeed;
+			particle.vy += (particle.baseY - particle.y) * config.returnSpeed;
+		}
+
+		particle.x += particle.vx;
+		particle.y += particle.vy;
+		particle.vx *= config.velocityDamping;
+		particle.vy *= config.velocityDamping;
+
+		const speed = Math.sqrt(
+			particle.vx * particle.vx + particle.vy * particle.vy
+		);
+		const hue = (speed * config.colorMultiplier) % 360;
+
+		hues[i] = hue / 360;
+		saturations[i] = Math.min(speed * config.saturationMultiplier, 1);
+		positions[i * 2] = particle.x;
+		positions[i * 2 + 1] = particle.y;
+	}
+	gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+	gl.bufferData(gl.ARRAY_BUFFER, positions, gl.DYNAMIC_DRAW);
+	gl.bindBuffer(gl.ARRAY_BUFFER, hueBuffer);
+	gl.bufferData(gl.ARRAY_BUFFER, hues, gl.DYNAMIC_DRAW);
+	gl.bindBuffer(gl.ARRAY_BUFFER, saturationBuffer);
+	gl.bufferData(gl.ARRAY_BUFFER, saturations, gl.DYNAMIC_DRAW);
+}
+
+function animate() {
+	updateParticles();
+
+	gl.clear(gl.COLOR_BUFFER_BIT);
+	gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+	gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
+	gl.enableVertexAttribArray(positionAttributeLocation);
+	gl.bindBuffer(gl.ARRAY_BUFFER, hueBuffer);
+	gl.vertexAttribPointer(hueAttributeLocation, 1, gl.FLOAT, false, 0, 0);
+	gl.enableVertexAttribArray(hueAttributeLocation);
+	gl.bindBuffer(gl.ARRAY_BUFFER, saturationBuffer);
+	gl.vertexAttribPointer(saturationAttributeLocation, 1, gl.FLOAT, false, 0, 0);
+	gl.enableVertexAttribArray(saturationAttributeLocation);
+	gl.useProgram(program);
+	gl.drawArrays(gl.POINTS, 0, config.particleCount);
+	requestAnimationFrame(animate);
+}
+
+canvas.addEventListener("mousemove", (event) => {
+	mouse.x = (event.clientX / canvas.width) * 2 - 1;
+	mouse.y = (event.clientY / canvas.height) * -2 + 1;
+});
+
+canvas.addEventListener("mouseleave", () => {
+	mouse.x = -500;
+	mouse.y = -500;
+});
+
+window.addEventListener("resize", () => {
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	gl.viewport(0, 0, canvas.width, canvas.height);
+	createParticles();
+});
+
+function changeText() {
+	currentTextIndex = (currentTextIndex + 1) % config.textArray.length;
+	const newCoordinates = getTextCoordinates(config.textArray[currentTextIndex]);
+	for (let i = 0; i < config.particleCount; i++) {
+		const randomIndex = Math.floor(Math.random() * newCoordinates.length);
+		const { x, y } = newCoordinates[randomIndex];
+		particles[i].baseX = x;
+		particles[i].baseY = y;
+	}
+	nextTextTimeout = setTimeout(changeText, config.textChangeInterval);
+}
+
+gl.clearColor(0, 0, 0, 1);
+createParticles();
+animate();
+nextTextTimeout = setTimeout(changeText, config.textChangeInterval);
+</script>
+</body>
+</html>
